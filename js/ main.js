@@ -47,10 +47,7 @@ for (let i = 0; i < 100; i++) {
     		arr.push(i + " " + symbols[i % 9]);
 }
 
-// create state with objects with their properties and values-- below
-
-// create cards with objects (atoms and molecules) and when to print what value ie. card 1 list 3 buttons and what buttons are active... 
-// what text is written on the card
+// create state with objects with their properties and values
 
 function state() {
 
