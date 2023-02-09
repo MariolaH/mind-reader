@@ -16,14 +16,14 @@ revealButton.addEventListener("click", nextPage);
 
 
 // need function to go to next page
-let page= 0;
+// let page= 0;
 function nextPage(){
     page++;
     state;
 }
 
 // function to return to first page
-let page= 0;
+// let page= 0;
 function resetPage(){
     page = 0;
     state;
