@@ -7,20 +7,29 @@ let goButton = document.getElementById('goButton');
 let returnButton = document.getElementById('returnButton');
 
 
-
-// need function to go to next page.. increment from 0   i++
-
-
-
 //event listeners for Buttons
 
-nextButton.addEventListener("click", myFunction);
-goButton.addEventListener("click", myFunction);
-returnButton.addEventListener("click", myFunction);
+nextButton.addEventListener("click", nextPage);
+goButton.addEventListener("click", nextPage);
+returnButton.addEventListener("click", returnButton);
+revealButton.addEventListener("click", nextPage);
 
-// need to create event listeners for goButton to go to next page on page 1.... but return to page 1 on page 2,3,4,5,6,
 
-// need a function when to activate what button
+// need function to go to next page
+
+function nextPage(){
+    page++;
+    state;
+}
+
+// function to return to first page
+
+function restPage(){
+    page = 0;
+    state;
+}
+
+// need a function to activate the buttons
 
 function show(object) {
     object.style.visibility = 'visible';
@@ -30,7 +39,14 @@ function hide(object) {
     object.style.visibility = 'hidden';
 }
 
-// create array with symbols and when to display what symbol based on number
+// create array with the symbols
+
+let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(']
+let arr = []
+for (let i = 0; i < 100; i++) {
+    		arr.push(i + " " + symbols[i % 9]);
+}
+
 
 // create state with objects with their properties and values-- below
 
