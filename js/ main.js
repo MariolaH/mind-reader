@@ -11,20 +11,20 @@ let returnButton = document.getElementById('returnButton');
 
 nextButton.addEventListener("click", nextPage);
 goButton.addEventListener("click", nextPage);
-returnButton.addEventListener("click", returnButton);
+returnButton.addEventListener("click", resetPage);
 revealButton.addEventListener("click", nextPage);
 
 
 // need function to go to next page
-
+let page= 0;
 function nextPage(){
     page++;
     state;
 }
 
 // function to return to first page
-
-function restPage(){
+let page= 0;
+function resetPage(){
     page = 0;
     state;
 }
@@ -46,7 +46,6 @@ let arr = []
 for (let i = 0; i < 100; i++) {
     		arr.push(i + " " + symbols[i % 9]);
 }
-
 
 // create state with objects with their properties and values-- below
 

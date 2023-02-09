@@ -1,3 +1,19 @@
-.nextButton .goButton{
-width: 10px;
+.nextButton, .goButton, .revealButton, .returnButton {
+/* width: 10px; */
+background-color: palevioletred;
 } 
+
+.container  {
+
+    height: 100vh;
+
+}
+
+.column {
+        height: 50vh;
+    }
+
+    .text-center {
+
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
