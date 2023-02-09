@@ -68,7 +68,7 @@ Objective:
 
 total cards: 6
 
-essential each card will be the same, only things that changes:
+essentially each card will be the same, only things that changes:
 
     Atoms
         Header (1, 2, 3, 4, 6)
@@ -85,19 +85,56 @@ In html can create 1 card and have sections (ie,header, paragraph... change when
 JS
 
 let state {
-    <!-- each index in the array represents each card.... [0,1,2,3,4,5,] -->
-symbols:[]
+   create a array for each item on the card, 
+   create a 
 header:[]
-
-
-
-
+Paragraph:[]            insert all the values from each page
+square button
+round button
 }
 
-
-on currentPage 1 run data from each object in index 0
+<!-- on currentPage 1 run data from each object in index 0
 on currentPage 2 run data from each object in index 1
 on currentPage 3 run data from each object in index 2
 on currentPage 4 run data from each object in index 3
 on currentPage 5 run data from each object in index 4
-on currentPage 6 run data from each object in index 5
+on currentPage 6 run data from each object in index 5 -->
+
+symbols - needs to be in an if statement
+    ... if pick number 12... this symbol appears
+
+ buttons:
+
+ location of buttons does not change... 
+ only thing that changes is logo and writing on button and funtionality
+
+    next button from pages 2-5 goes to next page... no next on page 1
+    go button page 1 -go
+                   2-6 resets game
+
+
+ essentially 
+
+click next go to next page
+click rest takes ypu back to homepage
+
+function
+ for each card that has all the objects each card
+
+card 1 {
+header:[]
+Paragraph:[]         
+square button
+round button
+}
+
+card 2 {
+header:[]
+Paragraph:[]         
+square button
+round button
+}
+
+etc
+
+need functions to turn on/off buttons or reset - insert those in card array
