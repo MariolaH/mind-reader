@@ -5,7 +5,8 @@ let subText = document.getElementById('subText');
 let proceed = document.getElementById('proceed');
 let goButton = document.getElementById('goButton');
 let returnButton = document.getElementById('returnButton');
-
+let image = document.getElementById('image');
+let page = 0;
 
 //event listeners for Buttons
 
@@ -16,17 +17,16 @@ revealButton.addEventListener("click", nextPage);
 
 
 // need function to go to next page
-// let page= 0;
-function nextPage(){
+
+function nextPage() {
     page++;
-    state;
+    state();
 }
 
 // function to return to first page
-// let page= 0;
-function resetPage(){
+function resetPage() {
     page = 0;
-    state;
+    state();
 }
 
 // need a function to activate the buttons
@@ -40,11 +40,10 @@ function hide(object) {
 }
 
 // create array with the symbols
-
 let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(']
 let arr = []
 for (let i = 0; i < 100; i++) {
-    		arr.push(i + " " + symbols[i % 9]);
+    arr.push(i + " " + symbols[i % 9]);
 }
 
 // create state with objects with their properties and values
@@ -58,6 +57,8 @@ function state() {
             hide(revealButton);
             show(goButton);
             hide(returnButton);
+           hide(subText)
+           hide(proceed)
             break;
 
         case 1:
@@ -67,6 +68,8 @@ function state() {
             subText.innerHTML = "when you have your number click next";
             hide(goButton);
             show(returnButton);
+            hide(proceed);
+            show(subText);
             break;
 
         case 2:
@@ -74,7 +77,9 @@ function state() {
             show(nextButton);
             hide(revealButton);
             subText.innerHTML = "Ex. 14 is 1 + 4 = 5";
+            show(subText);
             proceed.innerHTML = "click next to proceed";
+            show(proceed);
             hide(goButton);
             show(returnButton);
             break;
@@ -84,17 +89,21 @@ function state() {
             show(nextButton);
             hide(revealButton);
             subText.innerHTML = "Ex. 14 - 5 = 9";
+            show(subText);
             proceed.innerHTML = "click next to proceed";
+            show(proceed);
             hide(goButton);
             show(returnButton);
             break;
 
         case 4:
-            headingText.innerHTML = "0 - & <br> 1 - @ <br> 2 - $ <br> 3 - B <br> ...";
+            headingText.innerHTML = arr;
             show(revealButton);
             hide(nextButton);
             subText.innerHTML = "Find your new number";
+            show(subText);
             proceed.innerHTML = "Note the symbol beside the number";
+            show(proceed);
             hide(goButton);
             show(returnButton);
             break;
@@ -104,10 +113,18 @@ function state() {
             hide(revealButton);
             hide(nextButton);
             subText.innerHTML = "Your symbol is:";
+            show(subText);
             proceed.innerHTML = "&";
+            show(proceed);
             hide(goButton);
             show(returnButton);
             break;
     }
+}
+
+function init() {
+    resetPage();
+    state();
+
 }
 
