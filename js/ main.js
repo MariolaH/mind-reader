@@ -43,7 +43,7 @@ function hide(object) {
 let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(']
 let arr = []
 for (let i = 0; i < 100; i++) {
-    arr.push(i + " " + symbols[i % 9]);
+    arr.push(i + " - " + symbols[i % 9] + '<br/>');
 }
 
 // create state with objects with their properties and values
