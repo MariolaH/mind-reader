@@ -1,5 +1,4 @@
 .nextButton, .goButton, .revealButton, .returnButton {
-/* width: 10px; */
 background-color: palevioletred;
 } 
 
@@ -27,4 +26,5 @@ background-color: palevioletred;
     .text-center {
 
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 40px;
     }
