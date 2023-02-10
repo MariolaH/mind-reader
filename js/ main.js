@@ -1,3 +1,5 @@
+
+
 let headingText = document.getElementById('headingText');
 let nextButton = document.getElementById('nextButton');
 let revealButton = document.getElementById('revealButton');
@@ -8,7 +10,7 @@ let returnButton = document.getElementById('returnButton');
 let image = document.getElementById('image');
 let page = 0;
 
-//event listeners for Buttons targeting 
+//event listeners for Buttons targeting nextpage/reset page function
 
 nextButton.addEventListener("click", nextPage);
 goButton.addEventListener("click", nextPage);
@@ -124,6 +126,8 @@ function state() {
     }
 }
 
+
+// start program
 
 function init() {
     resetPage();
