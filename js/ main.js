@@ -1,5 +1,3 @@
-
-
 let headingText = document.getElementById('headingText');
 let nextButton = document.getElementById('nextButton');
 let revealButton = document.getElementById('revealButton');

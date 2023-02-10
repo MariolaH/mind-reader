@@ -74,7 +74,7 @@ essentially each card will be the same, only things that changes:
         Header (1, 2, 3, 4, 6)
         Paragraph Text (2, 3, 4, 5, 6)
 
-    Organism
+    molecules
         Go Button (1) - Goes to the second page 
         Reset Button (2, 3, 4, 5, 6) - Returns to the first page (has icon in it)
         Next/Reveal Button (2, 3, 4, 5) - Goes to next page
