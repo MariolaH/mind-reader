@@ -67,7 +67,7 @@ function state() {
             headingText.innerHTML = "Pick a number from 01 - 99";
             show(nextButton);
             hide(revealButton);
-            subText.innerHTML = "when you have your number click next";
+            subText.innerHTML = "when you have your number click Next";
             hide(goButton);
             show(returnButton);
             hide(proceed);
@@ -80,7 +80,7 @@ function state() {
             hide(revealButton);
             subText.innerHTML = "Ex. 14 is 1 + 4 = 5";
             show(subText);
-            proceed.innerHTML = "click next to proceed";
+            proceed.innerHTML = "click Next to proceed";
             show(proceed);
             hide(goButton);
             show(returnButton);
@@ -92,7 +92,7 @@ function state() {
             hide(revealButton);
             subText.innerHTML = "Ex. 14 - 5 = 9";
             show(subText);
-            proceed.innerHTML = "click next to proceed";
+            proceed.innerHTML = "click Next to proceed";
             show(proceed);
             hide(goButton);
             show(returnButton);
