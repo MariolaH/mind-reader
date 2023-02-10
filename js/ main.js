@@ -8,7 +8,7 @@ let returnButton = document.getElementById('returnButton');
 let image = document.getElementById('image');
 let page = 0;
 
-//event listeners for Buttons
+//event listeners for Buttons targeting 
 
 nextButton.addEventListener("click", nextPage);
 goButton.addEventListener("click", nextPage);
@@ -24,12 +24,13 @@ function nextPage() {
 }
 
 // function to return to first page
+
 function resetPage() {
     page = 0;
     state();
 }
 
-// need a function to activate the buttons
+// need a function to activate/deactivate buttons
 
 function show(object) {
     object.style.visibility = 'visible';
@@ -40,6 +41,7 @@ function hide(object) {
 }
 
 // create array with the symbols
+
 let symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '(']
 let arr = []
 for (let i = 0; i < 100; i++) {
@@ -57,8 +59,8 @@ function state() {
             hide(revealButton);
             show(goButton);
             hide(returnButton);
-           hide(subText)
-           hide(proceed)
+            hide(subText)
+            hide(proceed)
             break;
 
         case 1:
@@ -121,6 +123,7 @@ function state() {
             break;
     }
 }
+
 
 function init() {
     resetPage();
